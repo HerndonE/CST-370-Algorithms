@@ -7,7 +7,7 @@
  * ID: 4669
  * Date: 08/24/2020
  */
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
