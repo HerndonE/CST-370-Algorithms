@@ -16,8 +16,8 @@ distance between two numbers among all input numbers.
 
 	To run hw1_1
 ```console
-vocstartsoft:~/environment/hw0/hw0_1 $ g++ -o hw1_1 hw1_1.cpp
-vocstartsoft:~/environment/hw0/hw0_1 $ bash test_script_hw1_1.sh
+vocstartsoft:~/environment/hw1/hw1_1 $ g++ -o hw1_1 hw1_1.cpp
+vocstartsoft:~/environment/hw1/hw1_1 $ bash test_script_hw1_1.sh
 ```
 
 2. hw1_2 - A program that reads two groups of numbers in which each group has random integer numbers with
@@ -25,6 +25,6 @@ possible duplicates.
 
 	To run hw1_2
 ```console
-vocstartsoft:~/environment/hw0/hw0_1 $ g++ -o hw1_2 hw1_2.cpp
-vocstartsoft:~/environment/hw0/hw0_1 $ bash test_script_hw1_2.sh
+vocstartsoft:~/environment/hw1/hw1_2 $ g++ -o hw1_2 hw1_2.cpp
+vocstartsoft:~/environment/hw1/hw1_2 $ bash test_script_hw1_2.sh
 ```
