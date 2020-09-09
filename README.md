@@ -28,3 +28,19 @@ possible duplicates.
 vocstartsoft:~/environment/hw1/hw1_2 $ g++ -o hw1_2 hw1_2.cpp
 vocstartsoft:~/environment/hw1/hw1_2 $ bash test_script_hw1_2.sh
 ```
+
+3. hw2_1 -  A program checks if two strings are anagram or not.     
+
+	To run hw2_1
+```console
+vocstartsoft:~/environment/hw2/hw2_1 $ g++ -o hw2_1 hw2_1.cpp
+vocstartsoft:~/environment/hw2/hw2_1 $ bash test_script_hw2_1.sh
+```
+
+4. hw2_2 - A program that reads two timestamps of two events from a user and displays the difference between the two timestamps.    
+
+	To run hw2_2
+```console
+vocstartsoft:~/environment/hw2/hw2_2 $ g++ -o hw2_2 hw2_2.cpp
+vocstartsoft:~/environment/hw2/hw2_2 $ bash test_script_hw2_2.sh
+```
