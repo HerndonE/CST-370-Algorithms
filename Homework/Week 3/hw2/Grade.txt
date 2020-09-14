@@ -1,0 +1,50 @@
+20.00	0–20	100.00 %	
+(1) Grading of hw2_1: (10/10)
+
+    Test case 0 Passed
+
+    Test case 1 Passed
+
+    Test case 2 Passed
+
+    Test case 3 Passed
+
+    Test case 4 Passed
+
+    Test case 5 Passed
+
+    Test case 6 Passed
+
+-----------------------
+
+    7 PASSED
+
+    0 FAILED
+
+-----------------------
+
+
+
+(2) Grading of hw2_2: (10/10)
+
+    Test case 0 Passed
+
+    Test case 1 Passed
+
+    Test case 2 Passed
+
+    Test case 3 Passed
+
+    Test case 4 Passed
+
+    Test case 5 Passed
+
+    Test case 6 Passed
+
+-----------------------
+
+    7 PASSED
+
+    0 FAILED
+
+-----------------------

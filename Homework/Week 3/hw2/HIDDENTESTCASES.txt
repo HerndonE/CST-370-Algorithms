@@ -1,0 +1,74 @@
+1. Hidden test cases of hw2_1.cpp
+      Test case 4:
+        Input
+            AHHHHHHHHHHHHHHHHHHHH HHHHHHHHHAHHHHHHHHHHH
+
+        Output
+            ANAGRAM
+            A:1
+            H:20
+
+
+      Test case 5:
+        Input
+            ABC CBS
+
+        Output
+            NO ANAGRAM
+
+
+      Test case 6:
+        Input
+            ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ AABBCCDDEEFFGGHHIIJJKKLLMMNNOOPPQQRRSSTTUUVVWWXXYYZZ
+
+        Output
+            ANAGRAM
+            A:2
+            B:2
+            C:2
+            D:2
+            E:2
+            F:2
+            G:2
+            H:2
+            I:2
+            J:2
+            K:2
+            L:2
+            M:2
+            N:2
+            O:2
+            P:2
+            Q:2
+            R:2
+            S:2
+            T:2
+            U:2
+            V:2
+            W:2
+            X:2
+            Y:2
+            Z:2
+
+            
+============================================
+
+2. Hidden test cases of hw2_2.cpp
+
+      Test case 5:
+        Input
+            00:00:00
+            23:59:59
+
+        Output
+            23:59:59
+
+
+      Test case 6:
+        Input
+            12:34:56
+            12:34:54
+
+        Output
+            23:59:58
+
