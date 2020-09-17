@@ -44,3 +44,19 @@ vocstartsoft:~/environment/hw2/hw2_1 $ bash test_script_hw2_1.sh
 vocstartsoft:~/environment/hw2/hw2_2 $ g++ -o hw2_2 hw2_2.cpp
 vocstartsoft:~/environment/hw2/hw2_2 $ bash test_script_hw2_2.sh
 ```
+
+5. hw3_1 - A program that reads a set of events and displays the maximum number of events that take place concurrently.    
+
+	To run hw3_1
+```console
+vocstartsoft:~/environment/hw3/hw3_1 $ g++ -o hw3_1 hw3_1.cpp
+vocstartsoft:~/environment/hw3/hw3_1 $ bash test_script_hw3_1.sh
+```
+
+6. hw3_2 - A program that that converts a directed graph data from a user into a corresponding adjacency list format.     
+
+	To run hw3_2
+```console
+vocstartsoft:~/environment/hw3/hw3_2 $ g++ -o hw3_2 hw3_2.cpp
+vocstartsoft:~/environment/hw3/hw3_2 $ bash test_script_hw3_2.sh
+```
