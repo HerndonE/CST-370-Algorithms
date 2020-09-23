@@ -53,10 +53,27 @@ vocstartsoft:~/environment/hw3/hw3_1 $ g++ -o hw3_1 hw3_1.cpp
 vocstartsoft:~/environment/hw3/hw3_1 $ bash test_script_hw3_1.sh
 ```
 
-6. hw3_2 - A program that that converts a directed graph data from a user into a corresponding adjacency list format.     
+6. hw3_2 - A program that converts a directed graph data from a user into a corresponding adjacency list format.     
 
 	To run hw3_2
 ```console
 vocstartsoft:~/environment/hw3/hw3_2 $ g++ -o hw3_2 hw3_2.cpp
 vocstartsoft:~/environment/hw3/hw3_2 $ bash test_script_hw3_2.sh
+```
+
+7. hw4_1 - A program that reads a number of elements in a set and then the elements     
+of the set. Then it displays all possible binary numbers and corresponding subsets one by one.          
+
+	To run hw4_1
+```console
+vocstartsoft:~/environment/hw4/hw4_1 $ g++ -o hw4_1 hw4_1.cpp
+vocstartsoft:~/environment/hw4/hw4_1 $ bash test_script_hw4_1.sh
+```
+
+8. hw4_2 - A program that that collects the maximum number of apples in boxes.    
+
+	To run hw4_2
+```console
+vocstartsoft:~/environment/hw4/hw4_2 $ g++ -o hw4_2 hw4_2.cpp
+vocstartsoft:~/environment/hw4/hw4_2 $ bash test_script_hw4_2.sh
 ```
