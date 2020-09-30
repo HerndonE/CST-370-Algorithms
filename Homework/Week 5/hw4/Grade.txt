@@ -1,0 +1,50 @@
+18.00	0–20	90.00 %	
+(1) Grading of hw4_1: (9/9)
+
+    Test case 0 Passed
+
+    Test case 1 Passed
+
+    Test case 2 Passed
+
+    Test case 3 Passed
+
+    Test case 4 Passed
+
+    Test case 5 Passed
+
+-----------------------
+
+    6 PASSED
+
+    0 FAILED
+
+-----------------------
+
+
+
+(2) Grading of hw4_2: (9/11)
+
+    Test case 0 Passed
+
+    Test case 1 Passed
+
+    Test case 2 Passed
+
+    Test case 3 Passed
+
+    Test case 4 Passed
+
+    Test case 5 Passed
+
+    Test case 6 Failed
+
+    Test case 7 Failed
+
+-----------------------
+
+    6 PASSED
+
+    2 FAILED
+
+-----------------------
