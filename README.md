@@ -77,3 +77,21 @@ vocstartsoft:~/environment/hw4/hw4_1 $ bash test_script_hw4_1.sh
 vocstartsoft:~/environment/hw4/hw4_2 $ g++ -o hw4_2 hw4_2.cpp
 vocstartsoft:~/environment/hw4/hw4_2 $ bash test_script_hw4_2.sh
 ```
+
+9. hw5_1 - A program that reads a counter of input values and the input values themselves.              
+
+	To run hw5_1
+```console
+vocstartsoft:~/environment/hw5/hw5_1 $ g++ -o hw5_1 hw5_1.cpp
+vocstartsoft:~/environment/hw5/hw5_1 $ bash test_script_hw5_1.sh
+```
+
+10. hw5_2 - A program that reads an input graph data from a user.
+Then, it should present a path for the travelling salesman problem (TSP).
+Fair warning, it does not print PATH correctly    
+
+	To run hw5_2
+```console
+vocstartsoft:~/environment/hw4/hw5_2 $ g++ -o hw5_2 hw5_2.cpp
+vocstartsoft:~/environment/hw4/hw5_2 $ bash test_script_hw5_2.sh
+```
