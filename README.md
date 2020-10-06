@@ -95,3 +95,11 @@ Fair warning, it does not print PATH correctly
 vocstartsoft:~/environment/hw4/hw5_2 $ g++ -o hw5_2 hw5_2.cpp
 vocstartsoft:~/environment/hw4/hw5_2 $ bash test_script_hw5_2.sh
 ```
+11. hw6_1 - A program that conducts the BFS traversal of a graph and 
+displays city names in the range of hop(s) from a starting city.    
+
+	To run hw6_1
+```console
+vocstartsoft:~/environment/hw6/hw6_1 $ g++ -o hw6_1 hw6_1.cpp
+vocstartsoft:~/environment/hw6/hw6_1 $ bash test_script_hw6_1.sh
+```
