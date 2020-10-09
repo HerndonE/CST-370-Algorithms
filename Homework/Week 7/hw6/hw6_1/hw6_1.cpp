@@ -14,6 +14,7 @@
 #include <queue>
 #include <vector>
 #include <algorithm>
+#include <set>
 
 using namespace std;
 
@@ -21,7 +22,7 @@ int main() {
 
   int numCitiesVert;
   vector < string > cities;
-  map < string, bool > visited;
+  map < string, int > visited;
 
   cin >> numCitiesVert; //input
 
@@ -30,7 +31,7 @@ int main() {
     cin >> element;
     visited.insert({
       element,
-      false
+      -1
     });
     cities.push_back(element);
   }
@@ -54,9 +55,8 @@ int main() {
 
   queue < string > q;
   q.push(startingCity);
-  visited.find(startingCity) -> second = true;
+  visited.find(startingCity) -> second = 0;
   vector < int > amount;
-  int j = 0;
   int replaceHops = 0;
   int counter = 0;
   map < string, int > results;
@@ -68,18 +68,15 @@ int main() {
     startingCity = q.front();
     results.insert({
       startingCity,
-      j
+      visited[startingCity]
     });
     for (string neighbor: graph[startingCity]) {
-      j += (!visited[neighbor] && (neighbor == graph[startingCity][0])) ? 1 : 0;
 
-      if (!visited[neighbor]) {
+      if (visited[neighbor] == -1) {
+        visited[neighbor] = visited[startingCity] + 1;
         q.push(neighbor);
-        visited[neighbor] = true;
       }
-
     }
-
     q.pop();
   }
 
