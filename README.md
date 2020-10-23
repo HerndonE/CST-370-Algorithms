@@ -103,3 +103,27 @@ displays city names in the range of hop(s) from a starting city.
 vocstartsoft:~/environment/hw6/hw6_1 $ g++ -o hw6_1 hw6_1.cpp
 vocstartsoft:~/environment/hw6/hw6_1 $ bash test_script_hw6_1.sh
 ```
+
+12. hw7_1 - A program that displays the biggest number in an array with n integer numbers using a divide-and-conquer technique.         
+
+	To run hw7_1
+```console
+vocstartsoft:~/environment/hw7/hw7_1 $ g++ -o hw7_1 hw7_1.cpp
+vocstartsoft:~/environment/hw7/hw6_1 $ bash test_script_hw7_1.sh
+```
+
+13. hw7_2 - A program that reads a positive integer number from a user and reverse it.        
+
+	To run hw7_2
+```console
+vocstartsoft:~/environment/hw7/hw7_2 $ g++ -o hw7_2 hw7_2.cpp
+vocstartsoft:~/environment/hw7/hw7_2 $ bash test_script_hw7_2.sh
+```
+
+14. hw7_3 - A program that implements the Depth-First Search (DFS) algorithm.    
+
+	To run hw7_3
+```console
+vocstartsoft:~/environment/hw7/hw7_3 $ g++ -o hw7_3 hw7_3.cpp
+vocstartsoft:~/environment/hw7/hw7_3 $ bash test_script_hw7_3.sh
+```
