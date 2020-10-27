@@ -128,7 +128,7 @@ vocstartsoft:~/environment/hw7/hw7_3 $ g++ -o hw7_3 hw7_3.cpp
 vocstartsoft:~/environment/hw7/hw7_3 $ bash test_script_hw7_3.sh
 ```
 
-14. hw8_1 - A program that provides a few functions for a binary tree.    
+15. hw8_1 - A program that provides a few functions for a binary tree.    
 
 	To run hw8_1
 ```console
