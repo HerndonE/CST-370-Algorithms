@@ -1,0 +1,68 @@
+22.00	0–23	95.65 %	
+(1) Grading of hw7_1: (5/5)
+
+    Test case 0 Passed
+
+    Test case 1 Passed
+
+    Test case 2 Passed
+
+    Test case 3 Passed
+
+-----------------------
+
+    4 PASSED
+
+    0 FAILED
+
+-----------------------
+
+
+
+(2) Grading of hw7_2: (8/8)
+
+    Test case 0 Passed
+
+    Test case 1 Passed
+
+    Test case 2 Passed
+
+    Test case 3 Passed
+
+    Test case 4 Passed
+
+    Test case 5 Passed
+
+-----------------------
+
+    6 PASSED
+
+    0 FAILED
+
+-----------------------
+
+
+
+(3) Grading of hw7_3: (9/10)
+
+    Test case 0 Passed
+
+    Test case 1 Passed
+
+    Test case 2 Passed
+
+    Test case 3 Passed
+
+    Test case 4 Passed
+
+    Test case 5 Failed
+
+    Test case 6 Passed
+
+-----------------------
+
+    6 PASSED
+
+    1 FAILED
+
+-----------------------
