@@ -135,3 +135,43 @@ vocstartsoft:~/environment/hw7/hw7_3 $ bash test_script_hw7_3.sh
 vocstartsoft:~/environment/hw8/hw8_1 $ g++ -o hw8_1 hw8_1.cpp
 vocstartsoft:~/environment/hw8/hw8_1 $ bash test_script_hw8_1.sh
 ```
+
+16. hw9_1 - A program that connects several connected components of a graph with minimum number of edges to create a single connected component of the graph.    
+Fair warning, the program prints expected output    
+	To run hw9_1
+```console
+vocstartsoft:~/environment/hw9/hw9_1 $ g++ -o hw9_1 hw9_1.cpp
+vocstartsoft:~/environment/hw9/hw9_1 $ bash test_script_hw9_1.sh
+```
+
+17. hw9_2 - A program that conducts the topological sorting based on the Kahn’s algorithm covered in the class.    
+
+	To run hw9_2
+```console
+vocstartsoft:~/environment/hw9/hw9_2 $ g++ -o hw9_2 hw9_2.cpp
+vocstartsoft:~/environment/hw9/hw9_2 $ bash test_script_hw9_2.sh
+```
+
+18. hw9_3 - A program which checks if an input string is a palindrome or not.     
+
+	To run hw9_3
+```console
+vocstartsoft:~/environment/hw9/hw9_3 $ g++ -o hw9_3 hw9_3.cpp
+vocstartsoft:~/environment/hw9/hw9_3 $ bash test_script_hw9_3.sh
+```
+
+19. hw10_1 - A program to conduct heap operations.        
+
+	To run hw10_1
+```console
+vocstartsoft:~/environment/hw10/hw10_1 $ g++ -o hw10_1 hw10_1.cpp
+vocstartsoft:~/environment/hw10/hw10_1 $ bash test_script_hw10_1.sh
+```
+
+20. hw10_2 - A program ) to conduct the radix sort for strings.      
+//It works except for one case :/    
+	To run hw10_2
+```console
+vocstartsoft:~/environment/hw10/hw10_2 $ g++ -o hw10_2 hw10_2.cpp
+vocstartsoft:~/environment/hw10/hw10_2 $ bash test_script_hw10_2.sh
+```
