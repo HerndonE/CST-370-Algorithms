@@ -1,0 +1,118 @@
+1. Hidden test cases of hw10_1.cpp
+      Test case 5:
+        Input
+            6
+            20 15 10 5 1 2
+            9
+            insert 30
+            deleteMax
+            display
+            delete 15
+            display
+            deleteMax
+            display
+            update 4 0
+            display
+
+        Output
+            This is a heap.
+            20 15 10 5 1 2
+            20 5 10 2 1
+            10 5 1 2
+            10 5 1 0
+
+
+      Test case 6:
+        Input
+            1
+            20
+            8
+            insert 10
+            insert 15
+            insert 30
+            display
+            deleteMax
+            deleteMax
+            deleteMax
+            display
+
+        Output
+            This is a heap.
+            30 20 15 10
+            10
+
+
+      Test case 7:
+        Input
+            19
+            100 99 98 97 96 95 94 93 92 91 80 70 60 50 40 71 72 73 74 
+            6
+            displayMax
+            insert 1
+            delete 40
+            display
+            delete 98
+            display
+
+        Output
+            This is a heap.
+            100
+            100 99 98 97 96 95 94 93 92 91 80 70 60 50 1 71 72 73 74 
+            100 99 95 97 96 74 94 93 92 91 80 70 60 50 1 71 72 73
+
+
+      Test case 8:
+        Input
+            1
+            500
+            5
+            display
+            update 1 10
+            display
+            update 1 77
+            display
+
+        Output
+            This is a heap.
+            500
+            10
+            77
+
+=========================================================
+
+2. Hidden test cases of hw10_2.cpp
+      Test case 4:
+        Input
+            1
+            ABCDE
+
+        Output
+            ABCDE
+            ABCDE
+            ABCDE
+            ABCDE
+            ABCDE
+
+
+      Test case 5:
+        Input
+            2
+            HI HEY
+
+        Output
+            HI HEY
+            HEY HI
+            HEY HI
+
+
+      Test case 6:
+        Input
+            4
+            CAT HIM HAM BAT
+
+        Output
+            HIM HAM CAT BAT
+            HAM CAT BAT HIM
+            BAT CAT HAM HIM
+
+=========================================================
