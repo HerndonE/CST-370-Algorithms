@@ -58,10 +58,10 @@ void dijkstraOptimalPath(vector < int > & board, int & cols, int & rows) {
   // priority queue
   auto Less = [cols, & atScore](const Position & a,
     const Position & b) -> bool {
-    const int ia = a.y * cols + a.x;
-    const int scoreA = atScore[ia];
-    const int ib = b.y * cols + b.x;
-    const int scoreB = atScore[ib];
+    int ia = a.y * cols + a.x;
+    int scoreA = atScore[ia];
+    int ib = b.y * cols + b.x;
+    int scoreB = atScore[ib];
     if (scoreA < scoreB) {
       return false;
     }
@@ -86,10 +86,10 @@ void dijkstraOptimalPath(vector < int > & board, int & cols, int & rows) {
     const int currentScore = atScore[entryPosition.y * cols + entryPosition.x];
     if (entryPosition.x < cols - 1) //our x position
     {
-      const int x = entryPosition.x + 1;
-      const int y = entryPosition.y;
-      const int i = y * cols + x;
-      const int b = board[i];
+      int x = entryPosition.x + 1;
+      int y = entryPosition.y;
+      int i = y * cols + x;
+      int b = board[i];
       if (b != 2) //we skip 2 because it blocks our path (teacher's choice)
       {
         const int nextScore = currentScore + b;
