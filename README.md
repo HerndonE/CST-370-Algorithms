@@ -168,10 +168,33 @@ vocstartsoft:~/environment/hw10/hw10_1 $ g++ -o hw10_1 hw10_1.cpp
 vocstartsoft:~/environment/hw10/hw10_1 $ bash test_script_hw10_1.sh
 ```
 
-20. hw10_2 - A program ) to conduct the radix sort for strings.      
+20. hw10_2 - A program to conduct the radix sort for strings.      
 //It works except for one case :/    
 	To run hw10_2
 ```console
 vocstartsoft:~/environment/hw10/hw10_2 $ g++ -o hw10_2 hw10_2.cpp
 vocstartsoft:~/environment/hw10/hw10_2 $ bash test_script_hw10_2.sh
+```
+
+21. hw11_1 - A program to simulate the operations of linear probing covered in the class.    
+	To run hw11_1
+```console
+vocstartsoft:~/environment/hw11/hw11_1 $ g++ -o hw11_1 hw11_1.cpp
+vocstartsoft:~/environment/hw11/hw11_1 $ bash test_script_hw11_1.sh
+```
+
+22. hw11_2 - A program that displays the performance of three different
+sorting algorithms (= heap sort, merge sort, and quick sort) on the screen.    
+	To run hw11_2
+```console
+vocstartsoft:~/environment/hw11/hw11_2 $ g++ -o hw11_2 hw11_2.cpp
+vocstartsoft:~/environment/hw11/hw11_2 $ bash test_script_hw11_2.sh
+```
+
+23. hw12_1 - A program that to collect maximum number of coins
+on an n x m board which was covered in the class.    
+	To run hw12_1
+```console
+vocstartsoft:~/environment/hw12/hw12_1 $ g++ -o hw12_1 hw12_1.cpp
+vocstartsoft:~/environment/hw12/hw12_1 $ bash test_script_hw12_1.sh
 ```
