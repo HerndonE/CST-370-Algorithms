@@ -193,6 +193,7 @@ vocstartsoft:~/environment/hw11/hw11_2 $ bash test_script_hw11_2.sh
 
 23. hw12_1 - A program that to collect maximum number of coins
 on an n x m board which was covered in the class.    
+Provided psuedocode, printed expected output.       
 	To run hw12_1
 ```console
 vocstartsoft:~/environment/hw12/hw12_1 $ g++ -o hw12_1 hw12_1.cpp
