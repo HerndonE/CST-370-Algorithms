@@ -6,120 +6,139 @@
  * ID: 4669
  * Date: 12/10/2020
  */
-#include<iostream>
-#include<vector>
-#include<queue>
-#include <set>
+#include <iostream>
+#include <vector>
+#include <queue>
+
 using namespace std;
 
-struct position {
+//Reference:https://riptutorial.com/algorithm/example/24087/finding-shortest-path-from-source-in-a--2d-graph
+//          https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 
-int x;
-int y;
-
+struct Position {
+  int x;
+  int y;
 };
 
+void userInput(vector < int > & board, int & cols, int & rows) {
 
-void askForInput(int &x, int &y, vector<vector<int>> &myVector){
-    cin >> x >> y;
-    int input;
-    for (int i = 0; i < x; i++) {
-        vector<int> v1;
-        for (int j = 0; j < y; j++) {
-            cin >> input;
-            v1.push_back(input);
-
-        }
-        myVector.push_back(v1);
+  board.reserve(rows * cols);
+  int input;
+  for (int row = 0; row < rows; row++) {
+    for (int col = 0; col < cols; col++) {
+      cin >> input;
+      board.push_back(input);
     }
+  }
 
 }
 
-void print2DVector( vector<vector<int>> &myVector){
+void print(Position & p, vector < int > & atScore, int cols, vector < Position > & cameFrom) {
+  cout << "Max coins:" << atScore[p.y * cols + p.x] << endl;
+  vector < Position > path;
+  do {
+    path.push_back(p);
+    p = cameFrom[p.y * cols + p.x];
+  } while (p.x >= 0);
+  cout << "Path:";
+  for (int i = path.size() - 1; i >= 0; i--) {
+    cout << "(" << path[i].x + 1 << "," << path[i].y + 1 << ")"; //prints the the x,y position at its index + 1
+    if (i > 0)
+      cout << "->";
+  }
+  cout << endl;
+}
 
-    for (int i = 0; i < myVector.size(); i++) {
-        for (int j = 0; j < myVector[i].size(); j++){
-            cout << myVector[i][j] << " ";
-        }
-        cout << endl;
+void dijkstraOptimalPath(vector < int > & board, int & cols, int & rows) {
+  vector < Position > cameFrom(rows * cols, {
+    -1,
+    -1
+  });
+  vector < int > atScore(rows * cols, -1);
+  // priority queue
+  auto Less = [cols, & atScore](const Position & a,
+    const Position & b) -> bool {
+    const int ia = a.y * cols + a.x;
+    const int scoreA = atScore[ia];
+    const int ib = b.y * cols + b.x;
+    const int scoreB = atScore[ib];
+    if (scoreA < scoreB) {
+      return false;
     }
+    if (scoreA > scoreB) {
+      return true;
+    }
+    return ia < ib;
+  };
+  priority_queue < Position, vector < Position > , decltype(Less) > queue(Less); //Declaration type to get priority queue with
+  //lambda functionality
+  // initialize the source in the queue
+  queue.push({
+    0,
+    0
+  });
+  atScore[0] = board[0];
+  while (!queue.empty()) //The main loop
+  {
+    const Position entryPosition = queue.top();
+    queue.pop();
+    // score at the current location
+    const int currentScore = atScore[entryPosition.y * cols + entryPosition.x];
+    if (entryPosition.x < cols - 1) //our x position
+    {
+      const int x = entryPosition.x + 1;
+      const int y = entryPosition.y;
+      const int i = y * cols + x;
+      const int b = board[i];
+      if (b != 2) //we skip 2 because it blocks our path (teacher's choice)
+      {
+        const int nextScore = currentScore + b;
+        if (atScore[i] < nextScore) { //check if we found a better path
+          atScore[i] = nextScore;
+          cameFrom[i] = entryPosition;
+          queue.push({
+            x,
+            y
+          });
+        }
+      }
+    }
+    if (entryPosition.y < rows - 1) //our y position
+    {
+      const int x = entryPosition.x;
+      const int y = entryPosition.y + 1;
+      const int i = y * cols + x;
+      const int b = board[i];
+      if (b != 2) //we skip 2 because it blocks our path (teacher's choice)
+      {
+        const int nextScore = currentScore + b;
+        if (atScore[i] < nextScore) { //check if we found a better path
+          atScore[i] = nextScore;
+          cameFrom[i] = entryPosition;
+          queue.push({
+            x,
+            y
+          });
+        }
+      }
+    }
+  }
+
+  Position p = {
+    cols - 1,
+    rows - 1
+  };
+  print(p, atScore, cols, cameFrom);
+
 }
 
-void findOptimalPath(vector<vector<int>> &myVector, int x, int y){
+int main() {
+  int cols, rows;
+  cin >> cols >> rows;
+  vector < int > board;
 
-/* Reference https://riptutorial.com/algorithm/example/24087/finding-shortest-path-from-source-in-a--2d-graph
-Procedure BFS2D(vector, blockPosition, row, column):
-for i from 1 to row
-    for j from 1 to column
-        visited[i][j] := false
-    end for
-end for
-visited[source.x][source.y] := true
-level[source.x][source.y] := 0
-Q = queue()
-Q.push(source)
-m := dx.size
-while Q is not empty
-    top := Q.pop
-    for i from 1 to m
-        temp.x := top.x + dx[i]
-        temp.y := top.y + dy[i]
-        if temp is inside the row and column and top doesn't equal to blocksign
-            visited[temp.x][temp.y] := true
-            level[temp.x][temp.y] := level[top.x][top.y] + 1
-            Q.push(temp)
-        end if
-    end for
-end while
-Return level
+  userInput(board, cols, rows);
+  dijkstraOptimalPath(board, cols, rows);
 
-*/
-
-
+  return 0;
 }
-
-void printExpected(int &x,int&y){
-
- if(x == 4 && y == 4){
-   cout << "Max coins:3" << endl;
-   cout << "Path:(1,1)->(1,2)->(2,2)->(2,3)->(3,3)->(3,4)->(4,4)";
- }
-
-  if(x == 4 && y == 5){
-   cout << "Max coins:4" << endl;
-   cout << "Path:(1,1)->(1,2)->(2,2)->(2,3)->(2,4)->(2,5)->(3,5)->(4,5)";
- }
-
-  if(x == 3 && y == 2){
-   cout << "Max coins:4" << endl;
-   cout << "Path:(1,1)->(1,2)->(2,2)->(3,2)";
- }
-
-  if(x == 4 && y == 2){
-   cout << "Max coins:1" << endl;
-   cout << "Path:(1,1)->(2,1)->(3,1)->(4,1)->(4,2)";
- }
-
-  if(x == 5 && y == 5){
-   cout << "Max coins:8" << endl;
-   cout << "Path:(1,1)->(1,2)->(2,2)->(2,3)->(3,3)->(3,4)->(4,4)->(4,5)->(5,5)";
- }
-
-}
-
-
-int main (){
-
- int x, y, input;
- int startX, startY = 0;
- vector<vector<int>> myVector;
-
-  askForInput(x,y,myVector);
-  printExpected(x,y);
-  //findOptimalPath(myVector, startX, startY);
-  //print2DVector(myVector);
-
-
-return 0;
-}
-
