@@ -1,0 +1,44 @@
+	19.00	0–20	95.00 %	
+(1) Grading of 11_1: (9/10)
+
+    Test case 0 Passed
+
+    Test case 1 Passed
+
+    Test case 2 Passed
+
+    Test case 3 Passed
+
+    Test case 4 Failed
+
+    Test case 5 Passed
+
+-----------------------
+
+    5 PASSED
+
+    1 FAILED
+
+-----------------------
+
+
+
+(2) Grading of hw11_2: (10/10)
+
+    Test case 0 Passed
+
+    Test case 1 Passed
+
+    Test case 2 Passed
+
+    Test case 3 Passed
+
+    Test case 4 Passed
+
+-----------------------
+
+    5 PASSED
+
+    0 FAILED
+
+-----------------------
